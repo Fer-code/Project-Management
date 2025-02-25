@@ -1,0 +1,16 @@
+Funcionalidade: CRUD de projetos
+    Eu, como usuario posso
+    fazer CRUD de projetos
+
+
+Funcionalidade: CRUD de tarefas dentro de um projetos
+    Eu, como usuario posso
+    fazer CRUD de tarefas 
+    DENTRO de um projeto
+
+Funcionalidade: CRUD de times 
+    Eu, como usuario posso
+    fazer CRUD de times e 
+    posso definir niveis de 
+    acesso dentro dos projetos
+    que forem do meu time
