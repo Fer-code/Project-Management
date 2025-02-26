@@ -14,8 +14,8 @@
 
             </div>
 
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg  ">
-                <p>ola</p>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-5 ">
+                <livewire:components.projects.project-list />
             </div>
         </div>
     </div>

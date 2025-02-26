@@ -30,10 +30,13 @@ class Project extends Model
      /**
     * Search itens
     */
-    public static function search($ids = NULL, $search = '', $itemsPerPage = 10){
+    public static function search($ids = NULL,  $search = '', $filterStatus = '' , $itemsPerPage = 10){
         
+        dump($filterStatus);
+        dump($search);
+
         // Filters list
-        $list = Project::where("user_id", "=", Auth::user()->id);
+        $list = Project::where("owner", "=", Auth::user()->id);
 
 
         // Filter by search terms
@@ -43,6 +46,12 @@ class Project extends Model
 						->orWhere("id", "LIKE", "%" . $search . "%")
 						->orWhere("description", "LIKE", "%" . $search . "%");
 			});
+		}
+
+        //Filter by status
+		if (!empty($filterStatus)) {
+			$list = $list->where('status', $filterStatus);
+			
 		}
 
         // Filter by id
