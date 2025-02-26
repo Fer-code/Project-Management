@@ -6,5 +6,5 @@ Using laravel and livewire
 
 <p align="center">
     <p>ER Diagram:</p>
-  <img src="Diagrama ER de banco de dados (pé de galinha).png" alt="Exemplo" width="500" />
+  <img src="z.readme-images/Diagrama ER de banco de dados (pé de galinha).png" alt="Exemplo" width="500" />
 </p>
